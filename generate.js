@@ -25,7 +25,7 @@ for (const variant of ["regular", "solid"]) {
 			svg = svg.replace(`"${SVG}"`, "{SVG}");
 
 			tsx.push("");
-			tsx.push(`export const ${componentName} = /* @__PURE__ */ createIcon("", "", () => ${svg} as SVGSVGElement);`);
+			tsx.push(`export const ${componentName} = /* @__PURE__ */ createIcon("${variant}", "${moduleName}", () => ${svg} as SVGSVGElement);`);
 		}
 	}
 	await writeFile(join(output, variant + ".tsx"), tsx.join("\n") + "\n");
