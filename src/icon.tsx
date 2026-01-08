@@ -1,10 +1,12 @@
-import { Component, uncapture } from "rvx";
+import { Component, SVG, uncapture, XMLNS } from "rvx";
 
 export function createIcon(variant: string, name: string, Template: Component<void, SVGSVGElement>): Component<void | {}, SVGSVGElement> {
 	let template: SVGSVGElement | undefined;
 	return () => {
 		if (template === undefined) {
-			template = uncapture(Template);
+			template = XMLNS.inject(SVG, () => {
+				return uncapture(Template);
+			});
 			template.classList.add("iconoir", "iconoir-" + variant, "iconoir-" + name);
 		}
 		return template.cloneNode(true) as SVGSVGElement;
