@@ -20,3 +20,13 @@ All icons are rendered with the following additional css classes:
 ```html
 <svg class="iconoir iconoir-solid iconoir-sparks" ...
 ```
+
+You can add additional attributes or event handlers:
+```jsx
+import { Overwrite } from "rvx";
+import { Sparks } from "@rvx/iconoir/solid";
+
+<Overwrite role="button" on:click={...}>
+  <Sparks />
+</Overwrite>
+```
