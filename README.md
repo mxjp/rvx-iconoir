@@ -23,10 +23,10 @@ All icons are rendered with the following additional css classes:
 
 You can add additional attributes or event handlers:
 ```jsx
-import { Overwrite } from "rvx";
+import { Override } from "rvx";
 import { Sparks } from "@rvx/iconoir/solid";
 
-<Overwrite role="button" on:click={...}>
+<Override role="button" on:click={...}>
   <Sparks />
-</Overwrite>
+</Override>
 ```
