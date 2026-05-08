@@ -9,7 +9,7 @@
 		"rvx",
 		"iconoir"
 	],
-	"license": "MIT",
+	"license": "AGPL-3.0",
 	"version": "1.0.1",
 	"type": "module",
 	"sideEffects": false,
@@ -21,7 +21,7 @@
 		"build": "node generate.js && tsc"
 	},
 	"peerDependencies": {
-		"rvx": "^26.0.1"
+		"rvx": "^26.0.4"
 	},
 	"devDependencies": {
 		"iconoir": "^7.11.0",

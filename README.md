@@ -1,3 +1,5 @@
+This project is licensed under the [GNU Affero General Public License v3.0](./LICENSE).
+
 # @rvx/iconoir
 This package provides all the [iconoir](https://iconoir.com/) icons as [rvx components](https://mxjp.github.io/rvx/).
 
