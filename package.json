@@ -21,10 +21,10 @@
 		"build": "node generate.js && tsc"
 	},
 	"peerDependencies": {
-		"rvx": "^26.0.4"
+		"rvx": "^27.0.0"
 	},
 	"devDependencies": {
-		"iconoir": "^7.11.0",
-		"typescript": "^6.0.3"
+		"iconoir": "^7.11.1",
+		"typescript": "^7.0.2"
 	}
 }
